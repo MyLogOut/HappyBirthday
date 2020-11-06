@@ -6,13 +6,51 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/androidparty"
+            android:id="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scaleType="centerCrop"
+            android:importantForAccessibility="no" />
+
     <TextView
+            android:text="@string/happy_birthday_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Happy Birthday!"
+            android:id="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            android:textSize="36sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@android:color/black"
+            android:shadowColor="@color/white"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="3" />
+
+    <TextView
+            android:text="@string/from_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="sans-serif-light"
+            android:textSize="36sp"
+            android:textColor="@android:color/black"
+            android:importantForAccessibility="no"
+            android:shadowDx="2"
+            android:shadowRadius="3"
+            android:shadowDy="2"
+            android:shadowColor="@color/white" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
