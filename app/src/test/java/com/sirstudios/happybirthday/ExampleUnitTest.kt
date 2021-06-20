@@ -1,4 +1,4 @@
-package com.siriosstudio.happybirthday
+package com.sirstudios.happybirthday
 
 import org.junit.Test
 

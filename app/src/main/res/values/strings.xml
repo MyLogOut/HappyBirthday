@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">Happy Birthday</string>
-    <string name="happy_birthday_text">Happy Birthday, Sam!</string>
-    <string name="from_me">From Me</string>
+    <string name="wish_happy_birthday">Wish a\nHappy Birthday</string>
+    <string name="happy_birthday">Happy Birthday, %s!</string>
+    <string name="sender_name">From %s</string>
+    <string name="recipient">Recipient</string>
+    <string name="to_recipient">To</string>
+    <string name="sender">Sender</string>
+    <string name="from_sender">From</string>
+    <string name="generate">Generate</string>
+    <string name="choose_a_birthday_s_card_background">Choose a birthday\'s card background</string>
+    <string name="happy_birthday_s_card_background">Happy Birthday\'s background card</string>
 </resources>

@@ -13,4 +13,9 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <!-- Button Theme Modifier -->
+    <style name="Button.PrimaryVariant" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">#C466FF</item>
+    </style>
 </resources>

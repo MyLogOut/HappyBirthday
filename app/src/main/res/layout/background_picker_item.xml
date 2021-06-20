@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.imageview.ShapeableImageView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/iv_backgroundPickerItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="56dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/happy_birthday_s_card_background"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.DifferentCornerSize.RoundedCorners"
+        app:strokeColor="@color/gray"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:srcCompat="@drawable/android_party_happy_birthday_card"
+        />
