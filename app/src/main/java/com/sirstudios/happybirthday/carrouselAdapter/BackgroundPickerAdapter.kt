@@ -5,25 +5,30 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.sirstudios.happybirthday.Form
-import com.sirstudios.happybirthday.R
+import com.sirstudios.happybirthday.databinding.BackgroundPickerItemBinding
 
 
 class BackgroundPickerAdapter(
     private val backgroundId: List<Int> = listOf(),
     private val activity: Form
-    ): RecyclerView.Adapter<BackgroundCarrouselVH>() {
+) : RecyclerView.Adapter<BackgroundCarrouselVH>() {
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BackgroundCarrouselVH {
-        val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.background_picker_item, parent, false)
-        return BackgroundCarrouselVH(view)
+        val itemBinding = BackgroundPickerItemBinding
+            .inflate(
+                LayoutInflater
+                    .from(parent.context),
+                parent,
+                false
+            )
+        return BackgroundCarrouselVH(itemBinding)
     }
 
     override fun onBindViewHolder(holder: BackgroundCarrouselVH, position: Int) {
         val id = backgroundId[position]
         val drawable = ContextCompat.getDrawable(activity, id)
-
-        holder.itemView.background = drawable
-        holder.itemView.tag = id.toString()
+        holder.backgroundHolder.background = drawable
+        holder.backgroundHolder.tag = id.toString()
         holder.bind(backgroundId[position], clickListener = activity)
     }
 
